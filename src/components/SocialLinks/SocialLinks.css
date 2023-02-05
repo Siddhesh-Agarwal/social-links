@@ -1,0 +1,25 @@
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem 0;
+    margin-top: 1rem;
+}
+
+.social-link {
+    border: 1px solid #3cb043;
+    border-radius: 50%;
+    color: #333;
+    background-color: #cce6cc;
+    display: flex;
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 1.2rem;
+    margin: 0 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-link:hover {
+    background-color: #b3d9b3;
+}

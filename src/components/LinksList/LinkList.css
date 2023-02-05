@@ -1,0 +1,23 @@
+.link {
+    width: 100%;
+    max-width: 720px;
+    display: flex;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    margin-inline: auto;
+    color: #000;
+    background-color: #cce6cc;
+    font-size: 1.1rem;
+    font-family: 'Roboto Slab', serif;
+    text-decoration: none;
+}
+
+.link:hover {
+    background-color: #b3d9b3;
+}
+
+.link>.icon {
+    margin-right: 0.75rem;
+}

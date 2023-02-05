@@ -1,0 +1,17 @@
+#Profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: block;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    margin-inline: auto;
+}
+
+#Name {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-family: 'Asap', sans-serif;
+}
