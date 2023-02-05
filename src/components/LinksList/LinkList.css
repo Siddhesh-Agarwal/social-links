@@ -1,10 +1,15 @@
+.links {
+    margin-top: 1rem;
+    margin-inline: 5rem;
+}
+
 .link {
     width: 100%;
     max-width: 720px;
     display: flex;
-    border: 1px solid #333;
+    border: 1px solid #3cb043;
     border-radius: 12px;
-    padding: 1rem;
+    padding: 0.75rem 1rem; 
     margin-bottom: 1rem;
     margin-inline: auto;
     color: #000;
@@ -20,4 +25,18 @@
 
 .link>.icon {
     margin-right: 0.75rem;
+}
+
+.desc {
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    .links {
+        margin-inline: 1rem;
+    }
+
+    .desc {
+        display: none;
+    }
 }

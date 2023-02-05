@@ -21,12 +21,12 @@ const Links: link[] = [
         icon: <FaGlobe />,
         description: "My portfolio website",
     },
-    {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/siddhesh-agarwal/",
-        icon: <FaLinkedin />,
-        description: "Let's connect!",
-    },
+    // {
+    //     name: "LinkedIn",
+    //     url: "https://www.linkedin.com/in/siddhesh-agarwal/",
+    //     icon: <FaLinkedin />,
+    //     description: "Let's connect!",
+    // },
     {
         name: "GitHub",
         url: "https://github.com/Siddhesh-Agarwal",
@@ -60,7 +60,8 @@ export default function LinksList() {
                     <span className="icon">
                         {link.icon}
                     </span>
-                    <strong>{link.name}</strong>: {link.description}
+                    <strong>{link.name}</strong>
+                    <p className="desc">: {link.description}</p>
                 </motion.a>
             ))}
         </motion.div>
