@@ -5,5 +5,5 @@ indent_style = space
 tab_width = 4
 insert_final_newline = true
 
-[*.json]
+[*.{json,html}]
 indent_size = 2
