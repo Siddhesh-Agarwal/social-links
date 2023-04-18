@@ -1,9 +1,9 @@
 import "./LinkList.css";
 import {
-    FaGlobe,
-    FaLinkedin,
-    FaGithub,
     FaDev,
+    FaGithub,
+    FaGlobe,
+    FaProjectDiagram,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
 
@@ -11,7 +11,7 @@ type link = {
     name: string;
     url: string;
     icon: JSX.Element;
-    description?: string;
+    description: string;
 }
 
 const Links: link[] = [
@@ -21,12 +21,6 @@ const Links: link[] = [
         icon: <FaGlobe />,
         description: "My portfolio website",
     },
-    // {
-    //     name: "LinkedIn",
-    //     url: "https://www.linkedin.com/in/siddhesh-agarwal/",
-    //     icon: <FaLinkedin />,
-    //     description: "Let's connect!",
-    // },
     {
         name: "GitHub",
         url: "https://github.com/Siddhesh-Agarwal",
@@ -38,6 +32,12 @@ const Links: link[] = [
         url: "https://dev.to/siddhesh_agarwal",
         icon: <FaDev />,
         description: "My technical blogs",
+    },
+    {
+        name: "Projects",
+        url: "https://siddhesh-agarwal.github.io/Projects",
+        icon: <FaProjectDiagram />,
+        description: "My projects",
     }
 ]
 
@@ -52,16 +52,16 @@ export default function LinksList() {
                     className="link"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.2 }}
                     key={link.name}
                 >
                     <span className="icon">
                         {link.icon}
                     </span>
                     <strong>{link.name}</strong>
-                    <p className="desc">: {link.description}</p>
+                    <p className="desc">
+                        : {link.description}
+                    </p>
                 </motion.a>
             ))}
         </motion.div>
