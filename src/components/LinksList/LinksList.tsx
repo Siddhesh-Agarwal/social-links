@@ -35,7 +35,7 @@ const Links: link[] = [
     },
     {
         name: "Projects",
-        url: "https://siddhesh-agarwal.github.io/Projects",
+        url: "https://siddhesh-agarwal.github.io/projects",
         icon: <FaProjectDiagram />,
         description: "My projects",
     }
