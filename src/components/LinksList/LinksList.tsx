@@ -1,10 +1,10 @@
 import "./LinkList.css";
 import {
-    FaDev,
+    FaFlaskVial,
     FaGithub,
     FaGlobe,
-    FaProjectDiagram,
-} from "react-icons/fa";
+    FaHashnode,
+} from "react-icons/fa6";
 import { motion } from "framer-motion";
 
 type link = {
@@ -17,7 +17,7 @@ type link = {
 const Links: link[] = [
     {
         name: "Personal Website",
-        url: "https://siddhesh-agarwal.github.io/",
+        url: "https://siddhesh.tech/",
         icon: <FaGlobe />,
         description: "My portfolio website",
     },
@@ -29,14 +29,14 @@ const Links: link[] = [
     },
     {
         name: "Blogs",
-        url: "https://dev.to/siddhesh_agarwal",
-        icon: <FaDev />,
+        url: "https://blogs.siddhesh.tech/",
+        icon: <FaHashnode />,
         description: "My technical blogs",
     },
     {
         name: "Projects",
-        url: "https://siddhesh-agarwal.github.io/projects",
-        icon: <FaProjectDiagram />,
+        url: "https://siddhesh.tech/projects",
+        icon: <FaFlaskVial />,
         description: "My projects",
     }
 ]
