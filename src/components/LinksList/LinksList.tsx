@@ -17,27 +17,27 @@ type link = {
 const Links: link[] = [
     {
         name: "Personal Website",
-        url: "https://siddhesh.tech/",
+        url: "https://siddhesh-tech.vercel.app/",
         icon: <FaGlobe />,
         description: "My portfolio website",
     },
     {
         name: "GitHub",
-        url: "https://github.com/Siddhesh-Agarwal",
+        url: "https://github.com/Siddhesh-Agarwal/",
         icon: <FaGithub />,
-        description: "My open source contributions",
+        description: "My GitHub profile",
     },
     {
         name: "Blogs",
-        url: "https://blogs.siddhesh.tech/",
+        url: "https://siddhesh2003.hashnode.dev/",
         icon: <FaHashnode />,
-        description: "My technical blogs",
+        description: "My technical blog and newsletter",
     },
     {
         name: "Projects",
-        url: "https://siddhesh.tech/projects",
+        url: "https://siddhesh-tech.vercel.app/projects/",
         icon: <FaFlaskVial />,
-        description: "My projects",
+        description: "A collection of my projects",
     }
 ]
 
